@@ -1,0 +1,17 @@
+    <div class="login-form">
+        <img src="assets/images/user.png" width="80px" style="margin-top: -50px;"> 
+        <h1>login</h1>   
+
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+            <input type="text" ngModel placeholder="username" name="userName" id="userName" class="input-box">
+            <input type="password" ngModel placeholder="password" name="userPassword" id="userPassword" class="input-box">
+            <input type="submit" value="login" class="login_btn">
+            <hr>
+            <p class="or">OR</p>
+            <a routerLink="/registration">don't have an account?</a>
+            <input type="submit" value="sign up" class="signup_btn">
+        </form>
+    
+    </div>
+

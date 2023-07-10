@@ -1,0 +1,23 @@
+<mat-card class="m-3 p-2">
+    <mat-card-header>
+        <mat-card-title>User Management</mat-card-title>
+        <mat-card-subtitle>you may add, delete & edit </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <a class="btn btn-success" routerLink="/staff_registration">register new staff</a>
+        <table class="table table-bordered-sriped">
+            <thead>
+                <tr class="bg-warning">
+                    <th>SN</th><th>FirstName</th><th>MiddleName</th><th>LastName</th><th>Address</th><th>Email</th><th>Phone</th><th>Role</th><th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td><td>Abdulla</td><td>Makame</td><td>Abdalla</td><td>Jangombe</td><td>carrasco21abdulla.com</td><td>0778109782</td><td>Admin</td>
+                    <td> <mat-icon class="text-danger">delete</mat-icon><mat-icon class="text-success">edit</mat-icon> </td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>

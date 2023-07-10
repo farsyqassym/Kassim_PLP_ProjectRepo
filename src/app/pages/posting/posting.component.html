@@ -1,0 +1,52 @@
+<div class="card m-3">
+    <div class="row p-3">
+        <div class="col-md-12"><h1 class="text-center text-primary">Competition Posting page</h1></div>
+        <div class="col-md-12 pl-5 pr-5">
+            <form class="p-5 pb-1" (ngSubmit)="onSubmit()">
+                
+                <label for="title" class="text-primary">Theme</label>
+                <input type="text" placeholder="theme for competition" [(ngModel)]="posting.title" id="theme" name="title" class="form-control rounded-0"><br>
+                
+                <label for="description" class="text-primary">Description</label>
+                <textarea name="description" class="form-control rounded-0" id="description" [(ngModel)]="posting.description" placeholder="add description about theme"></textarea><br>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="type" class="text-primary">Competition type</label><br>
+                        <select name="type" id="type" [(ngModel)]="posting.type">
+                            <option></option>
+                            <option value="1">INDIVIDUAL</option>
+                            <option value="2">GROUP</option>
+                            <option></option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-8">
+                        <label for="address" class="text-primary">Address</label>
+                        <input type="text" placeholder="location" [(ngModel)]="posting.address" id="Address" name="address" class="form-control rounded-0">
+        
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <label for="startingDate" class="text-primary">Starting date of application</label><br>
+                        <input type="date" name="startingDate" id="startingDate" [(ngModel)]="posting.startingDate">        
+                    </div>
+
+                    <div class="col-md-4">                        
+                        <label for="deadline" class="text-primary">Dead line for application</label>
+                        <input type="date" id="deadline" name="deadline" [(ngModel)]="posting.deadline">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="issueDate" class="text-primary">Issue date</label>
+                        <input type="date" id="issueDate" name="issueDate" [(ngModel)]="posting.issueDate">
+                    </div>
+                </div>
+
+                <button class="btn btn-primary form-control rounded-0 mt-4">submit</button>
+            </form>
+        </div>
+    </div>
+</div>

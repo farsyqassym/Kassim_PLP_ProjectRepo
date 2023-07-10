@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="reg-form">
+            <img src="assets/images/user.png" width="120px" style="margin-top: -80px;"> 
+            <h1>APPLICANT REGISTRATION PAGE</h1>
+            <form (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="first name" [(ngModel)]="applicant.userFirstName" name="userFirstName" class="input-box">
+                <input type="text" placeholder="Middle name" [(ngModel)]="applicant.userMiddleName" name="userMiddleName" class="input-box">
+                <input type="text" placeholder="Last name" [(ngModel)]="applicant.userLastName" name="userLastName" class="input-box"><br><br>
+                <input type="text" placeholder="University" [(ngModel)]="applicant.university" name="university" class="input-box">
+                <input type="text" placeholder="example.com" [(ngModel)]="applicant.userEmail" name="userEmail" class="input-box">
+                <input type="text" placeholder="mobile number" [(ngModel)]="applicant.userPhone" name="userPhone" class="input-box"><br><br>
+                <input type="text" placeholder="Username" [(ngModel)]="applicant.userName" name="userName" class="input-box">
+                <input type="password" placeholder="password" [(ngModel)]="applicant.userPassword" name="userPassword" class="input-box">
+
+                <input type="submit" value="register" class="reg_btn">
+            </form>
+        </div>
+    </div>
+</div>

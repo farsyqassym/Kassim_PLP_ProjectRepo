@@ -1,0 +1,30 @@
+#type{
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+option{
+    border-radius: 0;
+    width: 200px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+#startingDate{
+    width: 200px;
+    padding: 5px;
+}
+
+#issueDate{
+    width: 200px;
+    padding: 5px;
+}
+
+#deadline{
+    width: 200px;
+    padding: 5px;
+}
